@@ -1,83 +1,102 @@
-/* General Reset */
+/* Resetting some basic styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Body & Background */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f8f8;
+  font-family: 'Arial', sans-serif;
+  background: #f4f4f9;
+  color: #fff;
 }
 
 /* Header Section */
-.header {
-    background: linear-gradient(45deg, #ff6f61, #6a5acd); /* Gradient color */
-    padding: 20px 0;
-    color: white;
-    position: relative;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: linear-gradient(45deg, #ff007f, #8a2be2); /* Linear Gradient */
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin: 0 auto;
+header .logo h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: white;
 }
 
-.logo h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
+header nav ul {
+  display: flex;
+  list-style-type: none;
 }
 
-.nav ul {
-    display: flex;
-    list-style: none;
+header nav ul li {
+  margin: 0 20px;
 }
 
-.nav ul li {
-    margin-right: 30px;
+header nav ul li a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: white;
+  transition: color 0.3s;
 }
 
-.nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
+header nav ul li a:hover {
+  color: #ff007f; /* Hover effect */
 }
 
-.nav ul li a:hover {
-    color: #f4f4f4;
+header .auth-buttons a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-left: 20px;
+  font-size: 1.1em;
+  color: white;
+  background-color: #ff007f;
+  transition: background-color 0.3s;
 }
 
-/* Button Styling */
-.auth-buttons {
-    display: flex;
-    gap: 10px;
+header .auth-buttons a:hover {
+  background-color: #8a2be2; /* Hover effect */
 }
 
-.btn {
-    background-color: transparent;
-    border: 2px solid white;
-    color: white;
-    font-size: 1rem;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 30px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+/* Hero Section */
+.hero {
+  background: linear-gradient(120deg, #8a2be2, #ff007f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
 }
 
-.login-btn:hover {
-    background-color: #fff;
-    color: #ff6f61;
+.hero-content {
+  max-width: 600px;
 }
 
-.signup-btn:hover {
-    background-color: #fff;
-    color: #6a5acd;
+.hero h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
-.btn:focus {
-    outline: none;
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  text-decoration: none;
+  padding: 15px 30px;
+  font-size: 1.3em;
+  color: white;
+  background-color: #ff007f;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #8a2be2; /* Hover effect */
 }
