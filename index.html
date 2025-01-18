@@ -3,135 +3,196 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="MusIN - Your Ultimate Music Experience">
-  <title>MusIN - Your Ultimate Music Experience</title>
-  <link rel="stylesheet" href="style.css">
+  <title>MusIN - Your Music, Your World</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+  
   <!-- Header Section -->
-  <header class="header">
+  <header>
     <div class="logo">
-      <a href="#">MusIN</a>
+      <h1>MusIN</h1>
     </div>
-    <nav class="nav">
+    <nav>
       <ul>
         <li><a href="#features">Features</a></li>
-        <li><a href="#services">Services</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#pricing">Pricing</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#newsletter">Newsletter</a></li>
       </ul>
     </nav>
+    <div class="auth-buttons">
+      <a href="#login" class="login-btn">Login</a>
+      <a href="#signup" class="signup-btn">Sign Up</a>
+    </div>
   </header>
 
   <!-- Hero Section -->
-  <section id="hero" class="hero">
+  <section class="hero">
     <div class="hero-content">
-      <h1>Welcome to MusIN</h1>
-      <p>Your one-stop destination for all things music. Discover, listen, and enjoy the music you love.</p>
-      <a href="#services" class="cta-btn">Explore Now</a>
+      <h2>Welcome to MusIN</h2>
+      <p>Your gateway to a world of endless music.</p>
+      <a href="#explore" class="cta-btn">Explore Music</a>
     </div>
   </section>
-
-  <!-- Features Section -->
-  <section id="features" class="features">
-    <h2>Why MusIN?</h2>
-    <div class="features-container">
-      <div class="feature-item">
-        <i class="fas fa-music"></i>
-        <h3>Endless Music Library</h3>
-        <p>Access millions of tracks, from the latest hits to timeless classics, all in one place.</p>
-      </div>
-      <div class="feature-item">
-        <i class="fas fa-headphones"></i>
-        <h3>High-Quality Audio</h3>
-        <p>Enjoy music in crystal-clear quality with our high-fidelity streaming service.</p>
-      </div>
-      <div class="feature-item">
-        <i class="fas fa-play-circle"></i>
-        <h3>Personalized Playlists</h3>
-        <p>Create custom playlists or let MusIN recommend music based on your taste.</p>
-      </div>
+<!-- Features Section -->
+<section id="features" class="features">
+  <h2>Features of MusIN</h2>
+  <div class="feature-container">
+    <div class="feature">
+      <i class="fas fa-headphones-alt"></i>
+      <h3>High-Quality Streaming</h3>
+      <p>Experience crystal-clear sound and seamless playback.</p>
     </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="services">
-    <h2>Our Services</h2>
-    <div class="services-container">
-      <div class="service-item">
-        <h3>Music Streaming</h3>
-        <p>Stream your favorite tracks online without interruptions. Premium and free tiers available.</p>
-      </div>
-      <div class="service-item">
-        <h3>Exclusive Content</h3>
-        <p>Get access to exclusive music content, including artist interviews, live sessions, and more.</p>
-      </div>
-      <div class="service-item">
-        <h3>Offline Listening</h3>
-        <p>Download your favorite songs and playlists to enjoy them even when you're offline.</p>
-      </div>
+    <div class="feature">
+      <i class="fas fa-music"></i>
+      <h3>Endless Music Library</h3>
+      <p>Access millions of songs from every genre, artist, and playlist.</p>
     </div>
-  </section>
-
-  <!-- About Us Section -->
-  <section id="about" class="about">
-    <h2>About MusIN</h2>
-    <p>MusIN is a music streaming platform dedicated to bringing you the best music experience. Our mission is to connect people through the power of music, offering an endless library, personalized recommendations, and an interactive community.</p>
-  </section>
-
-  <!-- Contact Us Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>If you have any questions or need support, feel free to reach out to us. We’re here to help!</p>
-    <form action="#" method="POST" class="contact-form">
-      <div class="form-group">
-        <input type="text" name="name" placeholder="Your Name" required>
-      </div>
-      <div class="form-group">
-        <input type="email" name="email" placeholder="Your Email" required>
-      </div>
-      <div class="form-group">
-        <textarea name="message" placeholder="Your Message" required></textarea>
-      </div>
-      <button type="submit" class="contact-btn">Send Message</button>
-    </form>
-  </section>
-
-  <!-- Newsletter Subscription Section -->
-  <section id="newsletter" class="newsletter">
-    <h2>Stay Updated with MusIN</h2>
-    <p>Subscribe to our newsletter for the latest updates on new music releases, playlists, and upcoming events.</p>
-    <form action="#" method="POST" class="newsletter-form">
-      <input type="email" placeholder="Enter your email" required>
-      <button type="submit" class="subscribe-btn">Subscribe</button>
-    </form>
-  </section>
-
-  <!-- Footer Section -->
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="logo">
-        <a href="#">MusIN</a>
-      </div>
-      <nav class="footer-nav">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="feature">
+      <i class="fas fa-share-alt"></i>
+      <h3>Share with Friends</h3>
+      <p>Create and share playlists with your friends effortlessly.</p>
     </div>
-    <div class="social-media">
-      <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-      <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+    <div class="feature">
+      <i class="fas fa-sync-alt"></i>
+      <h3>Cross-Device Support</h3>
+      <p>Stream on your phone, tablet, desktop, and smart devices.</p>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <!-- Optional: Scripts -->
-  <script src="script.js"></script>
+<!-- Music Player or Sample Section -->
+<section id="sample" class="sample">
+  <h2>Listen to Our Latest Tracks</h2>
+  <div class="music-player">
+    <audio controls>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  <div class="trending-tracks">
+    <h3>Trending Tracks</h3>
+    <ul>
+      <li><a href="#">Track 1 - Artist 1</a></li>
+      <li><a href="#">Track 2 - Artist 2</a></li>
+      <li><a href="#">Track 3 - Artist 3</a></li>
+      <li><a href="#">Track 4 - Artist 4</a></li>
+    </ul>
+  </div>
+</section>
+<!-- Social Proof Section -->
+<section id="testimonials" class="testimonials">
+  <h2>What Our Users Say</h2>
+  <div class="testimonial-container">
+    <div class="testimonial">
+      <p>"MusIN has completely changed the way I discover music. The playlists are tailored to my mood!"</p>
+      <h3>- Sarah, Music Enthusiast</h3>
+    </div>
+    <div class="testimonial">
+      <p>"I love how easy it is to share music with my friends. MusIN makes music social!"</p>
+      <h3>- John, DJ</h3>
+    </div>
+    <div class="testimonial">
+      <p>"The sound quality is phenomenal! I can listen to all my favorite tracks without any interruptions."</p>
+      <h3>- Emily, Audio Engineer</h3>
+    </div>
+  </div>
+</section>
+
+<!-- Artist Spotlight Section -->
+<section id="spotlight" class="spotlight">
+  <h2>Featured Artists</h2>
+  <div class="artist-container">
+    <div class="artist">
+      <img src="https://via.placeholder.com/150" alt="Artist 1">
+      <h3>Artist 1</h3>
+      <p>Discover the latest tracks from Artist 1, an upcoming talent in the indie music scene.</p>
+      <a href="#">Listen Now</a>
+    </div>
+    <div class="artist">
+      <img src="https://via.placeholder.com/150" alt="Artist 2">
+      <h3>Artist 2</h3>
+      <p>Experience the fusion of electronic beats and soulful melodies with Artist 2's new album.</p>
+      <a href="#">Listen Now</a>
+    </div>
+    <div class="artist">
+      <img src="https://via.placeholder.com/150" alt="Artist 3">
+      <h3>Artist 3</h3>
+      <p>Known for her unique style, Artist 3 is making waves in the world of alternative music.</p>
+      <a href="#">Listen Now</a>
+    </div>
+  </div>
+</section>
+  <!-- Call to Action Section -->
+<section id="cta" class="cta">
+  <h2>Join MusIN Today!</h2>
+  <p>Start streaming music, create your playlists, and discover new tracks from the hottest artists. Sign up now to experience the world of music like never before!</p>
+  <a href="#signup" class="cta-btn">Sign Up Now</a>
+</section>
+<!-- Newsletter Subscription Section -->
+<section id="newsletter" class="newsletter">
+  <h2>Stay Updated with MusIN</h2>
+  <p>Subscribe to our newsletter for the latest updates on new music releases, playlists, and upcoming events.</p>
+  <form action="#" method="POST" class="newsletter-form">
+    <input type="email" placeholder="Enter your email" required>
+    <button type="submit" class="subscribe-btn">Subscribe</button>
+  </form>
+</section>
+
+<!-- Contact Us Section -->
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <p>Have questions or feedback? We’d love to hear from you! Get in touch with us and we'll respond as soon as possible.</p>
+  <form action="#" method="POST" class="contact-form">
+    <div class="form-group">
+      <input type="text" name="name" placeholder="Your Name" required>
+    </div>
+    <div class="form-group">
+      <input type="email" name="email" placeholder="Your Email" required>
+    </div>
+    <div class="form-group">
+      <textarea name="message" placeholder="Your Message" required></textarea>
+    </div>
+    <button type="submit" class="contact-btn">Send Message</button>
+  </form>
+</section>
+  <!-- 404 Error Page Section -->
+<section id="error-page" class="error-page">
+  <div class="error-container">
+    <h1>404</h1>
+    <p>Oops! The page you're looking for doesn't exist. You can go back to our homepage or check out other sections of our site.</p>
+    <a href="/" class="error-btn">Go to Homepage</a>
+  </div>
+</section>
+<!-- Footer Section -->
+<footer id="footer" class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h3>MusIN</h3>
+      <p>Your ultimate music platform.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <ul>
+        <li><a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a></li>
+        <li><a href="https://facebook.com" target="_blank" class="fab fa-facebook"></a></li>
+        <li><a href="https://instagram.com" target="_blank" class="fab fa-instagram"></a></li>
+        <li><a href="https://youtube.com" target="_blank" class="fab fa-youtube"></a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="footer-copy">© 2025 MusIN. All Rights Reserved.</p>
+</footer>
 </body>
 </html>
